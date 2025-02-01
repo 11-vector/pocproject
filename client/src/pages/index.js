@@ -18,7 +18,7 @@ export default function Home() {
       
       console.log('Sending search request for:', query);
       
-      const response = await fetch(`${API_URL}/api/search?q=${encodeURIComponent(query)}`);
+      const response = await fetch(`${API_URL}/api/products/search?q=${encodeURIComponent(query)}`);
       
       console.log('Response status:', response.status);
       
