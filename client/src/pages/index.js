@@ -49,7 +49,7 @@ export default function Home() {
   const handleProductSelect = async (product) => {
     try {
       setError(null);
-      const response = await fetch(`/api/products/${encodeURIComponent(product.id)}`);
+      const response = await fetch(`${API_URL}/api/products/products/${encodeURIComponent(product.id)}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
